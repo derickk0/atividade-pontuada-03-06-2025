@@ -1,0 +1,66 @@
+/* src\pages\Cardapio\styles.css */
+
+.pagina-cardapio .container-cardapio {
+    background: rgba(255, 255, 255, 0.945);
+    padding: 40px 20px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.pagina-cardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 125px;
+}
+  
+.pagina-cardapio .container-cardapio {
+    background-color: rgba(255, 255, 255, 0.945);
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    overflow-y: auto;
+    text-align: center;
+    margin-top: 0px;
+}
+  
+.pagina-cardapio .container-cardapio h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #1c1c1c;
+}
+  
+.pagina-cardapio .container-cardapio .link-cadastro {
+    border: 2px solid #1d1c1c;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #1d1c1c;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+}
+
+.pagina-cardapio .container-cardapio .link-cadastro:hover {
+    background-color: #1d1c1c;
+    color: #ffffff;
+}
+
+.pagina-cardapio .background .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
