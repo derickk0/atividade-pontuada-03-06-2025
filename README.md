@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Sistema de Gestão de Restaurantes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto visa gerenciar informações de um restaurante, permitindo o cadastro, listagem e visualização de detalhes de pratos, com foco em uma experiência visual de cardápio. Os dados serão consumidos de uma API.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Funcionalidades do Sistema
 
-### `npm start`
+* **Tela Inicial:** Exibe o logo do restaurante e serve como ponto de entrada do sistema.
+* **Tela de Cadastro de Prato:** Permite cadastrar um novo prato, informando:
+    * Nome do Prato
+    * Descrição
+    * Preço
+    * Categoria (Ex: Entrada, Prato Principal, Sobremesa, Bebida)
+    * Disponibilidade (Ex: Em estoque, Esgotado)
+    * URL da Imagem do Prato: Um campo para inserir o link de uma imagem do prato.
+* **Tela de Cardápio (Listagem de Pratos):** Apresenta todos os pratos cadastrados de forma visualmente organizada, exibindo a imagem, nome e preço.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Estrutura Sugerida das Páginas
 
-### `npm test`
+* **Inicial:**
+    Exibe o logo do restaurante e um menu para navegar para o cadastro de pratos ou para o Cardápio.
+* **Cadastro de Prato:**
+    Formulário para inserir os dados do prato, incluindo o campo para a URL da imagem. Ao salvar, os dados são enviados para uma API (ou salvos localmente, caso não haja backend).
+* **Cardápio (Lista de Pratos):**
+    Mostra todos os pratos cadastrados, exibindo a imagem do prato, o nome e o preço, organizados em um layout de grade ou similar, remetendo a um menu de restaurante visual. Pode ter opções de filtragem por categoria.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Exemplo de Estrutura de Dados do Prato
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```json
+{
+  "id": 1,
+  "nomePrato": "Salada Caesar",
+  "descricao": "Alface americana, croutons, queijo parmesão e molho caesar.",
+  "preco": 29.00,
+  "categoria": "Entrada",
+  "disponibilidade": "Em estoque",
+  "urlImagem": "[https://example.com/imagens/salada-caesar.jpg](https://example.com/imagens/salada-caesar.jpg)"
+}
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Dicas de Implementação
 
-### `npm run eject`
+- Utilize `react-router-dom` para navegação entre as páginas.
+- Use hooks (`useState`, `useEffect`) para gerenciar estado e buscar dados da API.
+- Para consumir a API, utilize `axios`.
+- Crie componentes separados para cada página:
+  - `Home.js`
+  - `CadastroPrato.js`
+  - `Cardapio.js`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Exemplo de Rotas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```javascript
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import CadastroPrato from "./CadastroPrato";
+import Cardapio from "./Cardapio"; // Renomeado de ListaPratos para Cardapio
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cadastro" element={<CadastroPrato />} />
+        <Route path="/cardapio" element={<Cardapio />} /> {/* Rota para o cardápio */}
+      </Routes>
+    </BrowserRouter>
+  );
+}
+```
 
-## Learn More
+# API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Alterações na API com Spring Boot
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Faça as mudanças necessárias na API feita com **Spring Boot** para gerenciar pratos, incluindo o novo campo:
 
-### Code Splitting
+- `urlImagem` (tipo: `String`) — Este campo deve armazenar a URL da imagem do prato.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Conexão com Banco de Dados MySQL
 
-### Analyzing the Bundle Size
+Implemente a conexão da aplicação com um banco de dados **MySQL**, garantindo que:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- As configurações de conexão estejam corretamente definidas no arquivo `application.properties`.
+- As entidades estejam mapeadas corretamente para refletir as tabelas no banco de dados.
+- O campo `urlImagem` esteja presente na tabela correspondente aos pratos.
