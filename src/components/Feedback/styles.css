@@ -1,1 +1,30 @@
 /* src\components\Feedback\styles.css */
+
+.mensagem {
+    position: fixed;
+    top: 16px; 
+    right: -300px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    max-width: 300px;
+    z-index: 1000;
+  }
+  
+  .mensagem.sucesso {
+    background: radial-gradient(circle, rgba(236, 223, 197, 0.842), rgba(196, 166, 121, 0.842));
+  }
+  
+  .mensagem.erro {
+    background: radial-gradient(circle, rgba(236, 223, 197, 0.842), rgba(196, 166, 121, 0.842));
+  }
+  
+  .mensagem.visivel {
+    right: 16px; 
+    opacity: 1;
+  }
