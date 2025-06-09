@@ -8,5 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface PratoRepository extends JpaRepository<Prato, Long> {
-    Optional<Prato> findByurl(String url);
+    Optional<Prato> findByUrl(String url);
 }

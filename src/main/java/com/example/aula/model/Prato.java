@@ -9,6 +9,7 @@ import jakarta.validation.constraints.NotBlank;
 @Entity
 public class Prato {
     @Id
+    
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

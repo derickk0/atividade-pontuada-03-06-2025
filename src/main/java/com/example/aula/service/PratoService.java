@@ -23,7 +23,7 @@ public class PratoService {
     }
 
     public Prato salvar(@Valid Prato prato) {
-        if (pratoRepository.findByurl(prato.getUrl()).isPresent()) {
+        if (pratoRepository.findByUrl(prato.getUrl()).isPresent()) {
             throw new UrlJaCadastrado("Prato já cadastrado.");
         }
         return pratoRepository.save(prato);

@@ -12,12 +12,12 @@ import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/usuarios")
-public class UsuarioController {
+@RequestMapping("/pratos")
+public class PratoController {
 
     private PratoService pratoService;
 
-    public UsuarioController(PratoService pratoService) {
+    public PratoController(PratoService pratoService) {
         this.pratoService = pratoService;
     }
 

@@ -44,13 +44,6 @@ public class GlobalExceptionHandler {
                 .body(Map.of("mensagem", erro.getMessage()));
     }
 
-    // @ExceptionHandler(NoHandlerFoundException.class)
-    // public ResponseEntity<Map<String, String>> handleNotFound(NoHandlerFoundException ex) {
-    //     return ResponseEntity
-    //             .status(HttpStatus.NOT_FOUND)
-    //             .body(Map.of("erro", "Página não encontrada"));
-    // }
-
     @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
     public ResponseEntity<Map<String, Object>> handlerHttpRequestMethodNotSupportedException(HttpRequestMethodNotSupportedException erro) {
         return ResponseEntity
