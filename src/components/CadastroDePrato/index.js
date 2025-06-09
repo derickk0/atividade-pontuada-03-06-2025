@@ -21,7 +21,7 @@ function CadastroDePrato() {
 
     const cadastrarPrato = async () => {
         try {
-            const response = await axios.post('https://atividade-pontuada-03-06-2025.onrender.com/cardapio', {nome, descricao, preco, categoria, disponibilidade, url})
+            const response = await axios.post('https://atividade-pontuada-03-06-2025-a2lz.onrender.com/cardapio', {nome, descricao, preco, categoria, disponibilidade, url})
             exibirMensagem(response.data.mensagem || 'Prato cadastrado com sucesso!', 'sucesso')
             setNome('')
             setDescricao('')

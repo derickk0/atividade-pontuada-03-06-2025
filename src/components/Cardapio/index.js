@@ -10,7 +10,7 @@ function Cardapio() {
     useEffect(() => {
         const carregarPratos = async () => {
             try {
-                const response = await axios.get('https://atividade-pontuada-03-06-2025.onrender.com/cardapio')
+                const response = await axios.get('https://atividade-pontuada-03-06-2025-a2lz.onrender.com/cardapio')
                 setPratos(response.data)
             } catch (error) {
                 alert('Erro ao buscar pratos: ', error)
