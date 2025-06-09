@@ -59,7 +59,7 @@ function CadastroDePrato() {
                     </div>
                     <div>
                         <input
-                            type='text'
+                            type='descricao'
                             id="descricao"
                             value={descricao}
                             placeholder='Descrição do prato'
@@ -69,7 +69,7 @@ function CadastroDePrato() {
                     </div>
                     <div>
                         <input
-                            type="text"
+                            type="preco"
                             id="preco"
                             value={preco}
                             placeholder='Preço do prato'
@@ -79,7 +79,7 @@ function CadastroDePrato() {
                     </div>
                     <div>
                         <input
-                            type="text"
+                            type="categoria"
                             id="categoria"
                             value={categoria}
                             placeholder='Categoria do prato'
@@ -89,7 +89,7 @@ function CadastroDePrato() {
                     </div>
                     <div>
                         <input
-                            type="text"
+                            type="disponibilidade"
                             id="disponibilidade"
                             checked={disponibilidade}
                             placeholder='Disponibilidade do prato'
