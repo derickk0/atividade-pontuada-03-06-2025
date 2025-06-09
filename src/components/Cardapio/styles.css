@@ -1,0 +1,35 @@
+/* src\components\Cardapio\styles.css */
+
+.cardapio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    height: 390px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+  
+.cardapio li {
+    width: 220px;
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(120, 85, 60, 0.822);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    margin-right: 5px;
+    height: 200px;
+    text-shadow: 0px 0px 1px #4d382a;
+}
+    
+.cardapio li strong {
+    font-weight: bold;
+}
+  
+.cardapio{
+    height: 450px;
+    overflow-y: auto;
+}

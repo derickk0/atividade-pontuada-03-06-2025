@@ -1,0 +1,71 @@
+/* src\pages\TelaInicial\styles.css */
+
+.tela-inicial .container-telaInicial {
+    width: 400px;
+    height: 500px;
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(236, 223, 197, 0.842), rgba(196, 166, 121, 0.842));
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+    border: 2px solid rgb(120, 85, 60);
+}
+
+.tela-inicial .container-telaInicial h1 {
+    color: rgba(92, 83, 69, 0.842);
+    text-shadow: 0px 0px 1px #1d1c1c;
+}
+
+.tela-inicial .container-telaInicial .link-cadastro-prato {
+    border: 2px solid rgb(120, 85, 60);;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgba(63, 57, 47, 0.842);
+    background-color: #976e479d;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 1px #4d382a;
+}
+
+.tela-inicial .container-telaInicial .link-cadastro-prato:hover {
+    background-color: rgb(120, 85, 60);
+    color: #ffffff;
+}
+
+.tela-inicial .container-telaInicial .link-cardapio {
+    border: 2px solid rgb(120, 85, 60);
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgba(63, 57, 47, 0.842);
+    background-color: #976e479d;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 1px #4d382a;
+}
+
+.tela-inicial .container-telaInicial .link-cardapio:hover {
+    background-color: rgb(120, 85, 60);
+}
+
+.tela-inicial .background .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    box-shadow: 0 0 150px #1d1c1c;
+}
+
+.tela-inicial .container-telaInicial .logo {
+    width: 350px;
+    margin-bottom: -40px;
+    margin-top: -40px;
+}

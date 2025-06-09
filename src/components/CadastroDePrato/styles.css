@@ -1,0 +1,93 @@
+/* src\components\CadastroDePrato\styles.css */
+
+.container-cadastroDePrato {
+    margin-top: 270px;
+    background: radial-gradient(circle, rgba(236, 223, 197, 0.842), rgba(196, 166, 121, 0.842));
+    padding: 40px 20px;
+    border-radius: 12px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+    border: 2px solid rgb(120, 85, 60);
+    height: 90%;
+}
+
+.container-button {
+    margin-top: 25px;
+}
+
+.container-cadastroDePrato .logo-gutin {
+    width: 400px;
+    margin-bottom: -10px;
+    margin-right: -20px;
+    margin-left: -15px;
+}
+  
+h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(92, 83, 69, 0.842);
+    text-shadow: 0px 0px 1px #1d1c1c;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    margin-bottom: 40px;
+}
+
+input,
+button {
+    width: 300px;
+    padding: 12px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: rgba(196, 166, 121, 0.445);
+    color: rgba(92, 83, 69, 0.842);
+    text-shadow: 0px 0px 1px #4d382a;
+}
+
+input,
+button:focus-within {
+    outline: none;
+}
+  
+input {
+    border: 2px solid rgb(120, 85, 60);
+}
+  
+button {
+    border: 2px solid rgb(120, 85, 60);
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgba(63, 57, 47, 0.842);
+    background-color: #976e479d;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 5px;
+    text-shadow: 0px 0px 1px #4d382a;
+    margin-bottom: 0px;
+}
+  
+button:hover {
+    background-color: rgb(120, 85, 60);
+}
+  
+.container-cadastroDePrato .formulario .link-cardapio {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 14px;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
