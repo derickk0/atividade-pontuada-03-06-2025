@@ -46,68 +46,66 @@ function CadastroDePrato() {
             <img src={logo} alt="Logo Gutin" className='logo-gutin' />
             <form onSubmit={(e) => {e.preventDefault(); cadastrarPrato()}} className="form-cadastroDePrato">
                 <h2>Cadastrar Prato</h2>
-                <form className='inputs-pratos'>
-                    <div>
-                        <input
-                            type="text"
-                            id="nome"
-                            value={nome}
-                            placeholder='Nome do prato'
-                            onChange={(e) => setNome(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div>
-                        <input
-                            type="descricao"
-                            id="descricao"
-                            value={descricao}
-                            placeholder='Descrição do prato'
-                            onChange={(e) => setDescricao(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div>
-                        <input
-                            type="preco"
-                            id="preco"
-                            value={preco}
-                            placeholder='Preço do prato'
-                            onChange={(e) => setPreco(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div>
-                        <input
-                            type="categoria"
-                            id="categoria"
-                            value={categoria}
-                            placeholder='Categoria do prato'
-                            onChange={(e) => setCategoria(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div>
-                        <input
-                            type="disponibilidade"
-                            id="disponibilidade"
-                            checked={disponibilidade}
-                            placeholder='Disponibilidade do prato'
-                            onChange={(e) => setDisponibilidade(e.target.checked)}
-                            required
-                        />
-                    </div>
-                    <div>
-                        <input
-                            type="url"
-                            id="url"
-                            value={url}
-                            placeholder='URL da imagem do prato'
-                            onChange={(e) => setUrl(e.target.value)}
-                            required
-                        />
-                    </div>
-                </form>
+                <div>
+                    <input
+                        type="text"
+                        id="nome"
+                        value={nome}
+                        placeholder='Nome do prato'
+                        onChange={(e) => setNome(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <input
+                        type="descricao"
+                        id="descricao"
+                        value={descricao}
+                        placeholder='Descrição do prato'
+                        onChange={(e) => setDescricao(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <input
+                        type="number"
+                        id="preco"
+                        value={preco}
+                        placeholder='Preço do prato'
+                        onChange={(e) => setPreco(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <input
+                        type="categoria"
+                        id="categoria"
+                        value={categoria}
+                        placeholder='Categoria do prato'
+                        onChange={(e) => setCategoria(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <input
+                        type="disponibilidade"
+                        id="disponibilidade"
+                        value={disponibilidade}
+                        placeholder='Disponibilidade do prato'
+                        onChange={(e) => setDisponibilidade(e.target.checked)}
+                        required
+                    />
+                </div>
+                <div>
+                    <input
+                        type="url"
+                        id="url"
+                        value={url}
+                        placeholder='URL da imagem do prato'
+                        onChange={(e) => setUrl(e.target.value)}
+                        required
+                    />
+                </div>
                 <button type="submit" className='submit'>Cadastrar</button>
                 <button onClick={() => navigate('/cardapio')} className='link-cardapio'>
                     Ver cardápio
