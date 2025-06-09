@@ -16,7 +16,7 @@ function PaginaListaUsuarios() {
             <div className='container-cardapio'>
                 <h2>Cardápio</h2>
                 <Cardapio/>
-                <button onClick={() => navigate('/cadastro-prato')} className='link-cadastro'>
+                <button onClick={() => navigate('/cadastro-de-prato')} className='link-cadastro'>
                     Cadastrar prato
                 </button>
             </div>
