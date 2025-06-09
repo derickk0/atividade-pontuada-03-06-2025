@@ -13,6 +13,7 @@ import java.util.Map;
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/cardapio")
+
 public class PratoController {
 
     private PratoService pratoService;
@@ -23,7 +24,7 @@ public class PratoController {
 
     @GetMapping
     public List<Prato> listarTodos() {
-        return PratoService.listarTodos();
+        return pratoService.listarTodos();
     }
 
     @PostMapping
