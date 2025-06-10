@@ -29,7 +29,7 @@ public class PratoController {
 
     @PostMapping
     public ResponseEntity<Map<String, Object>> salvar(@Valid @RequestBody Prato prato) {
-        pratoService.salvar(new Prato());
+        pratoService.salvar(prato);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(Map.of("mensagem", "Prato cadastrado com sucesso."));
