@@ -1,5 +1,8 @@
 # atividade-pontuada-03-06-2025
 
+# Link para o frontend no Render
+https://atividade-pontuada-03-06-2025-frontend.onrender.com
+
 # Sistema de Gestão de Restaurantes
 
 Este projeto visa gerenciar informações de um restaurante, permitindo o cadastro, listagem e visualização de detalhes de pratos, com foco em uma experiência visual de cardápio. Os dados serão consumidos de uma API.
