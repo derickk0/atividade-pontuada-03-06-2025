@@ -3,7 +3,7 @@
 .pagina-cardapio .container-cardapio {
     background: radial-gradient(circle, rgba(236, 223, 197, 0.842), rgba(196, 166, 121, 0.842));
     padding: 40px 20px;
-    width: 400px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
