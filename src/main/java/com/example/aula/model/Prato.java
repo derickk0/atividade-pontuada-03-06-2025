@@ -19,8 +19,8 @@ public class Prato {
     @NotBlank(message = "A descrição do prato é obrigatória.")
     private String descricao;
 
-    @NotNull(message = "O preço do prato é obrigatório.")
-    private Double preco;
+    @NotBlank(message = "O preço do prato é obrigatório.")
+    private String preco;
 
     @NotBlank(message = "A categoria do prato é obrigatória.")
     private String categoria;
@@ -34,7 +34,7 @@ public class Prato {
     public Prato() {
     }
 
-    public Prato(Long id, String nome, String descricao, Double preco, String categoria, String disponibilidade, String url) {
+    public Prato(Long id, String nome, String descricao, String preco, String categoria, String disponibilidade, String url) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
@@ -68,11 +68,11 @@ public class Prato {
         this.descricao = descricao;
     }
 
-    public @NotNull(message = "O preço do prato é obrigatório.") Double getPreco() {
+    public @NotBlank(message = "O preço do prato é obrigatório.") String getPreco() {
         return preco;
     }
 
-    public void setPreco(@NotNull(message = "O preço do prato é obrigatório.") Double preco) {
+    public void setPreco(@NotBlank(message = "O preço do prato é obrigatório.") String preco) {
         this.preco = preco;
     }
 
