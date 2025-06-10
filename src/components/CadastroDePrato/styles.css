@@ -74,9 +74,9 @@ button {
     color: rgba(63, 57, 47, 0.842);
     background-color: #976e479d;
     transition: background-color 0.3s, color 0.3s;
-    margin-bottom: 5px;
     text-shadow: 0px 0px 1px #4d382a;
     margin-bottom: 0px;
+    margin-top: 5px;
 }
   
 button:hover {
@@ -90,4 +90,20 @@ button:hover {
     width: 80%;
     margin-top: 10px;
     margin-bottom: -10px;
+}
+
+.cardapio::-webkit-scrollbar-track {
+    background: rgba(255, 235, 205, 0.1);
+    border-radius: 10px;
+}
+
+.cardapio::-webkit-scrollbar-thumb {
+    background-color: rgba(120, 85, 60, 0.7);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.cardapio::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(120, 85, 60, 0.9);
 }
