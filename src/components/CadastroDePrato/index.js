@@ -98,7 +98,7 @@ function CadastroDePrato() {
                 </div>
                 <div>
                     <input
-                        type="url"
+                        type="text"
                         id="url"
                         value={url}
                         placeholder='URL da imagem do prato'
