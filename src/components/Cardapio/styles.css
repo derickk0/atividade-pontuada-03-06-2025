@@ -9,6 +9,7 @@
     margin-right: 10px;
     overflow-x: hidden;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
   
 .cardapio li {
@@ -23,6 +24,7 @@
     margin-right: 5px;
     height: 200px;
     text-shadow: 0px 0px 1px #4d382a;
+    overflow-x: hidden;
 }
     
 .cardapio li strong {
@@ -30,6 +32,7 @@
 }
   
 .cardapio{
-    height: 450px;
+    height: 500px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
