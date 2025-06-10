@@ -19,7 +19,7 @@ public class Prato {
     @NotBlank(message = "A descrição do prato é obrigatória.")
     private String descricao;
 
-    @NotBlank(message = "O preço do prato é obrigatório.")
+    @NotNull(message = "O preço do prato é obrigatório.")
     private Double preco;
 
     @NotBlank(message = "A categoria do prato é obrigatória.")
@@ -68,11 +68,11 @@ public class Prato {
         this.descricao = descricao;
     }
 
-    public @NotBlank(message = "O preço do prato é obrigatório.") Double getPreco() {
+    public @NotNull(message = "O preço do prato é obrigatório.") Double getPreco() {
         return preco;
     }
 
-    public void setPreco(@NotBlank(message = "O preço do prato é obrigatório.") Double preco) {
+    public void setPreco(@NotNull(message = "O preço do prato é obrigatório.") Double preco) {
         this.preco = preco;
     }
 
