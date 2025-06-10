@@ -13,7 +13,7 @@ function CadastroDePrato() {
     const [descricao, setDescricao] = useState('')
     const [preco, setPreco] = useState('')
     const [categoria, setCategoria] = useState('')
-    const [disponibilidade, setDisponibilidade] = useState(false)
+    const [disponibilidade, setDisponibilidade] = useState('')
     const [url, setUrl] = useState('')
 
     const navigate = useNavigate()
@@ -88,7 +88,7 @@ function CadastroDePrato() {
                 </div>
                 <div>
                     <input
-                        type="disponibilidade"
+                        type="text"
                         id="disponibilidade"
                         value={disponibilidade}
                         placeholder='Disponibilidade do prato'
