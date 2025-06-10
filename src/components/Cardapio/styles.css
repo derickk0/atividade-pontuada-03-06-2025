@@ -44,3 +44,19 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
+
+.cardapio::-webkit-scrollbar-track {
+    background: rgba(255, 235, 205, 0.1);
+    border-radius: 10px;
+}
+
+.cardapio::-webkit-scrollbar-thumb {
+    background-color: rgba(120, 85, 60, 0.7);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.cardapio::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(120, 85, 60, 0.9);
+}
