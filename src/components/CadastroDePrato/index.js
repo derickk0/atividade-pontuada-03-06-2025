@@ -92,7 +92,7 @@ function CadastroDePrato() {
                         id="disponibilidade"
                         value={disponibilidade}
                         placeholder='Disponibilidade do prato'
-                        onChange={(e) => setDisponibilidade(e.target.checked)}
+                        onChange={(e) => setDisponibilidade(e.target.value)}
                         required
                     />
                 </div>
