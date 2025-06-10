@@ -29,6 +29,7 @@ function Cardapio() {
                         <strong>Nome: </strong> {prato.nome}<br />
                         <strong>Descrição: </strong> {prato.descricao}<br />
                         <strong>Preço: </strong> {prato.preco}<br />
+                        <img src={prato.url} className="imagem-prato" /><br />
                     </li>
                 ))
             )}
