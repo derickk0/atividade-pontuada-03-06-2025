@@ -58,7 +58,7 @@ function CadastroDePrato() {
                 </div>
                 <div>
                     <input
-                        type="descricao"
+                        type="text"
                         id="descricao"
                         value={descricao}
                         placeholder='Descrição do prato'
@@ -78,7 +78,7 @@ function CadastroDePrato() {
                 </div>
                 <div>
                     <input
-                        type="categoria"
+                        type="text"
                         id="categoria"
                         value={categoria}
                         placeholder='Categoria do prato'
