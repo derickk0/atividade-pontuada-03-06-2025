@@ -20,7 +20,7 @@ public class Prato {
     private String descricao;
 
     @NotBlank(message = "O preço do prato é obrigatório.")
-    private String preco;
+    private Double preco;
 
     @NotBlank(message = "A categoria do prato é obrigatória.")
     private String categoria;
@@ -34,7 +34,7 @@ public class Prato {
     public Prato() {
     }
 
-    public Prato(Long id, String nome, String descricao, String preco, String categoria, String disponibilidade, String url) {
+    public Prato(Long id, String nome, String descricao, Double preco, String categoria, String disponibilidade, String url) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
