@@ -1,5 +1,7 @@
 # atividade-pontuada-03-06-2025
 
+# Dupla - Erick Breno Santana Pereira, Arthur Nascimento
+
 # Link para o frontend no Render
 https://atividade-pontuada-03-06-2025-frontend.onrender.com
 
